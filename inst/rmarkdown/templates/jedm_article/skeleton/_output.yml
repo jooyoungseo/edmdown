@@ -1,0 +1,7 @@
+edmdown::jedm_pdf: default
+edmdown::jedm_word: default
+bookdown::epub_book: default
+bookdown::gitbook:
+  split_bib: true
+  config:
+    download: ["pdf", "word", "epub"]
