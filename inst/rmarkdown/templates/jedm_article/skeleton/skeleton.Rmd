@@ -13,8 +13,7 @@ abstract: |
 keywords: submission, JEDM, abstract, instructions, style
 bibliography: bib/ref.bib
 knit: "bookdown::render_book"
-site: bookdown::bookdown_site
-documentclass: book
+site: "bookdown::bookdown_site"
 ---
 
 ```{r setup, include = FALSE, echo = FALSE, purl = FALSE}
@@ -23,7 +22,7 @@ documentclass: book
 #library(rmarkdown)
 
 # Set global knitr options here:
-options(knitr.table.format = "latex")
+#options(knitr.table.format = "latex")
 knitr::opts_chunk$set(fig.path = 'fig/', echo=FALSE, cache=FALSE, cache.comments=FALSE, message=FALSE, warning=FALSE, tidy="styler")
 
 # Seed for random number generation:

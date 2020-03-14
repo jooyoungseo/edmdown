@@ -35,11 +35,10 @@ moment.
 ## Loading package:
 library(edmdown)
 
-## Making a template using RStudio; do the following if you are a non-RStudio user:
-rmarkdown::draft(
-  file = "my_article",
-  template = "jedm_article",
-  package = "edmdown"
+## Do the following if you are a non-RStudio user:
+rmarkdown::draft(file = "my_article", 
+   template = "jedm_article", 
+   package = "edmdown"
 )
 
 # After editing, use the bookdown knit button in RStudio; if you don't use RStudio, do the following in your R console:

@@ -3,6 +3,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[notitlepage,12pt]{jedm}
+\usepackage[english]{babel} % Specify a different language here - english by default
 %\usepackage[sc,sf,small]{titlesec}
 \usepackage[table]{xcolor}
 \usepackage{graphicx}
@@ -23,6 +24,15 @@
 % Pandoc syntax highlighting
 $if(highlighting-macros)$
 $highlighting-macros$
+$endif$
+
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
 $endif$
 
 $for(header-includes)$

@@ -41,11 +41,11 @@ This is a basic example which shows you how to use `edmdown` package.
 
 While other formats are usable, `pdf` output is fully supported at this moment.
 
-```{r example, eval = FALSE}
+``` r
 ## Loading package:
 library(edmdown)
 
-## Making a template using RStudio; do the following if you are a non-RStudio user:
+## Do the following if you are a non-RStudio user:
 rmarkdown::draft(file = "my_article", 
    template = "jedm_article", 
    package = "edmdown"
